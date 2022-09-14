@@ -3,9 +3,32 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Your account</ion-title>
+    <ion-title>Profile</ion-title>
   </ion-toolbar>
 </ion-header>
-<img src="./assets/icon/Group 6818.png">
-<ion-button type="submit" (click)="authService.SignOut()" expand="block"
-  >Logout</ion-button>
+<ion-content>
+  <div class="profile" *ngIf="authService.userData as user">
+    <img  src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
+      alt= "./assets/icon/Group 6818.png">
+      <h1>Hello: <strong>{{(user.userName) ? user.userName : 'User'}}</strong></h1>
+        <p>Email:
+          <br>
+          <strong>{{user.email}}</strong></p>
+  </div>
+</ion-content>
+<ion-row>
+  <ion-col>
+    <ion-button type="submit" (click)="authService.SignOut()" expand="block"
+      >Log out</ion-button
+    >
+  </ion-col>
+</ion-row>
+<!-- <ion-button type="submit" (click)="authService.SignOut()" expand="block"
+  >Logout</ion-button> -->
+  <!-- <div class="Profile" *ngIf="authService.userData as user">
+    <img src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
+      alt="./assets/icon/Group 6818.png">
+    <div class="Profile">
+      <p>Email: <strong>{{user.email}}</strong></p>
+</div>
+</div> -->
