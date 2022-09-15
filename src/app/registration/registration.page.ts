@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../shared/authentication-service';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-registration',
@@ -19,11 +20,14 @@ export class RegistrationPage implements OnInit {
     this.authService
       .RegisterUser(email.value, password.value)
       .then((res) => {
-        // Do something here
         this.authService.SendVerificationMail();
       })
       .catch((error) => {
         window.alert(error.message);
-      });
+      })
+      if(this.authService.SendVerificationMail){
+        window.alert('Verification Mail was sent');
+        this.router.navigate(["/login"])
+      } ;
   }
 }

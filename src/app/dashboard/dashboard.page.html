@@ -6,11 +6,11 @@
     <ion-title>Profile</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content color="background">
+  
   <div class="profile" *ngIf="authService.userData as user">
-    <img  src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
-      alt= "./assets/icon/Group 6818.png">
-      <h1>Hello: <strong>{{(user.userName) ? user.userName : 'User'}}</strong></h1>
+    <ion-avatar><img  src="{{(user.photoURL) ? user.photoURL : '/assets/Group 6818.png'}}">
+      <h1>Name: <strong>{{(user.userName) ? user.userName : 'User'}}</strong></h1>
         <p>Email:
           <br>
           <strong>{{user.email}}</strong></p>

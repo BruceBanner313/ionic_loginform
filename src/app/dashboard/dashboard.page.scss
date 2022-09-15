@@ -6,3 +6,8 @@
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
+ion-avatar {
+    --border-radius: 50%;
+    width: 120px !important; 
+    height : 120px !important;
+  }

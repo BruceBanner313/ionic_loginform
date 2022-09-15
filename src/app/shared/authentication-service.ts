@@ -81,6 +81,10 @@ export class AuthenticationService {
   GoogleAuth() {
     return this.AuthLogin(new auth.GoogleAuthProvider());
   }
+  FacebookAuth(){
+    return this.AuthLogin(new auth.FacebookAuthProvider());
+
+  }
 
   // Auth providers
   AuthLogin(provider) {

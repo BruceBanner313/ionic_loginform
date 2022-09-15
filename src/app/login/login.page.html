@@ -48,7 +48,14 @@
       </ion-button>
     </ion-col>
   </ion-row>
-</ion-content> -->
+</ion-content>  -->
+<ion-header collapse="fade">
+  <ion-toolbar color="background">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title ><h1>Sign in</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content color="background">
   <img class="img" src="./assets/icon/loginImage.png"> 
   <ion-item color="background">
@@ -61,34 +68,32 @@
   </ion-item>
   <ion-row>
     <ion-col>
-      <ion-button type="submit" (click)="logIn(email, password)" expand="block"
-        >Login</ion-button
+      <ion-button color="background_home" type="submit" (click)="logIn(email, password)" expand="block"
+        ><p1 class="p">Login</p1> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button
       >
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col>
-      <ion-button
+      <p1
+      class="password-reset"
         expand="block"
         color="warning"
         [routerLink]="['/password-reset']"
       >
-        Password Reset
-      </ion-button>
-    </ion-col>
+        Reset password?
+    </p1>
+    </ion-col>    
   </ion-row>
-
-  <ion-row>
-    <ion-col>
-      <ion-button
-        type="submit"
-        color="danger"
-        (click)="authService.GoogleAuth()"
-        expand="block"
-      >
-        Login with Google
-      </ion-button>
-    </ion-col>
-  </ion-row>
-
-</ion-content>
+  <ion-col>
+    <p1>
+      Don't you have Account?</p1>
+      <p1
+      expand="block"
+      color="warning"
+      [routerLink]="['/registration']"
+      class="p1">
+     Reigster Here
+  </p1>
+  </ion-col>
+</ion-content> -->

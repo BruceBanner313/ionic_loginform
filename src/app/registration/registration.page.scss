@@ -1,0 +1,67 @@
+.img{
+    margin-left: 53px;
+    margin-top: 130px;
+    width: 263px;
+    height: 343.35px;
+}
+.google {
+  margin-left: 52px;
+
+    width: 43px;
+    height: 46px;
+}
+.apple {
+  margin-left: 70px;
+  width: 40px;
+  height: 46px;
+}
+.fb {
+  margin-left: 70px;
+    width: 43px;
+    height: 46px;
+}
+.p{
+    color: white;
+    font-family: Georama;
+    margin-top: 3px;
+}
+.arrow{
+    color: white;
+    font-family: Georama;
+    margin-top: 3px;
+}
+h1{
+    color: #ffcc99;
+    font-family: Georama;
+    margin-left: 0px;
+}
+.p1{
+    color: rgb(214, 123, 25);
+    font-family: Georama;
+}
+.divider {
+
+    display: flex;
+    &:before,
+
+    &:after {
+      content: "";
+      flex: 1;
+    }
+  }
+  .line {
+    align-items: center;
+    margin: 1em 1em;
+    color: #cccccc;
+    &:before,
+    &:after {
+      height: 1px;
+      margin: 0 1em;
+    }
+  }
+  .one-line {
+    &:before,
+    &:after {
+       background: #cccccc;
+    }
+  }

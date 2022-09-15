@@ -1,13 +1,4 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>Register User</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
+<!-- <ion-content>
   <form>
     <ion-item lines="full">
       <ion-label position="floating">Email</ion-label>
@@ -47,5 +38,43 @@
         </ion-button>
       </ion-col>
     </ion-row>
+  </form>
+</ion-content> -->
+<ion-content color="background">
+
+  <img class="img" src="./assets/icon/Mobile login-pana (1) 1.png"> 
+  <form>
+    <ion-item color="background">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item>
+
+    <ion-item color="background">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button
+          type="submit" color="background_home"
+          (click)="signUp(email, password)"
+          expand="block"
+          ><p1 class="p">Register</p1> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-col>
+      <p1>
+        already a user?</p1>
+        <p1 class="p1" expand="block"
+        [routerLink]="['/login']">
+        Sign In
+    </p1>
+    </ion-col>
+<span class="divider line one-line">or continue with</span>
+      <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
+      <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">
+      <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
   </form>
 </ion-content>
