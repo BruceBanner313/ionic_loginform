@@ -40,18 +40,25 @@
     </ion-row>
   </form>
 </ion-content> -->
+<ion-header collapse="fade">
+  <ion-toolbar color="background">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title ><h1>Sign up</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content color="background">
 
   <img class="img" src="./assets/icon/Mobile login-pana (1) 1.png"> 
   <form>
     <ion-item color="background">
       <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" #email required></ion-input>
+      <ion-input type="text" autocapitalize="sentences" autocomplete="off" #email required></ion-input>
     </ion-item>
 
     <ion-item color="background">
       <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" #password required></ion-input>
+      <ion-input type="password" autocapitalize="sentences" autocomplete="off" #password required></ion-input>
     </ion-item>
 
     <ion-row>
@@ -72,7 +79,7 @@
         Sign In
     </p1>
     </ion-col>
-<span class="divider line one-line">or continue with</span>
+<span class="divider line one-line">or Register with</span>
       <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
       <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">
       <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">

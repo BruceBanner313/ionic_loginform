@@ -60,11 +60,11 @@
   <img class="img" src="./assets/icon/loginImage.png"> 
   <ion-item color="background">
     <ion-label position="floating">Email</ion-label>
-    <ion-input type="text" #email required></ion-input>
+    <ion-input type="text" autocapitalize="sentences" autocomplete="off" #email required></ion-input>
   </ion-item>
   <ion-item  color="background">
     <ion-label position="floating">Password</ion-label>
-    <ion-input type="password" #password required></ion-input>
+    <ion-input type="password" autocapitalize="sentences" autocomplete="off" #password required></ion-input>
   </ion-item>
   <ion-row>
     <ion-col>
@@ -96,4 +96,8 @@
      Reigster Here
   </p1>
   </ion-col>
+  <span class="divider line one-line">or continue with</span>
+      <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
+      <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">
+      <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
 </ion-content> -->

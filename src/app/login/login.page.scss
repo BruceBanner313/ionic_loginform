@@ -11,7 +11,7 @@
 }
 .img{
     margin-left: 10px;
-    margin-top: 109px;
+    margin-top: 90px;
     width: 353px;
     height: 293.73px;
 }
@@ -28,3 +28,45 @@ h1{
     color: rgb(214, 123, 25);
     font-family: Georama;
 }
+.google {
+    margin-left: 52px;
+  
+      width: 43px;
+      height: 46px;
+  }
+  .apple {
+    margin-left: 70px;
+    width: 45px;
+    height: 46px;
+  }
+  .fb {
+    margin-left: 70px;
+      width: 43px;
+      height: 46px;
+  }
+  .divider {
+
+    display: flex;
+    &:before,
+
+    &:after {
+      content: "";
+      flex: 1;
+    }
+  }
+  .line {
+    align-items: center;
+    margin: 1em 1em;
+    color: #cccccc;
+    &:before,
+    &:after {
+      height: 1px;
+      margin: 0 1em;
+    }
+  }
+  .one-line {
+    &:before,
+    &:after {
+       background: #cccccc;
+    }
+  }
