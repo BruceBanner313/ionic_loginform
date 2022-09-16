@@ -1,45 +1,3 @@
-<!-- <ion-content>
-  <form>
-    <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" #email required></ion-input>
-    </ion-item>
-
-    <ion-item lines="full">
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" #password required></ion-input>
-    </ion-item>
-
-    <ion-row>
-      <ion-col>
-        <ion-button
-          type="submit"
-          (click)="signUp(email, password)"
-          expand="block"
-          >Register</ion-button
-        >
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <span class="already">already a user?</span>
-        <ion-button class="sign" [routerLink]="['/login']">Sign In</ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-button
-          type="submit"
-          color="danger"
-          (click)="authService.GoogleAuth()"
-          expand="block"
-        >
-          Login with Google
-        </ion-button>
-      </ion-col>
-    </ion-row>
-  </form>
-</ion-content> -->
 <ion-header collapse="fade">
   <ion-toolbar color="background">
     <ion-buttons slot="start">
@@ -67,18 +25,13 @@
           type="submit" color="background_home"
           (click)="signUp(email, password)"
           expand="block"
-          ><p1 class="p">Register</p1> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button
-        >
+          ><p class="p2">Register</p> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button>
       </ion-col>
     </ion-row>
-    <ion-col>
-      <p1>
-        already a user?</p1>
-        <p1 class="p1" expand="block"
-        [routerLink]="['/login']">
-        Sign In
-    </p1>
-    </ion-col>
+    <ion-row>
+      <p>already a user?</p>
+        <p class="p1" expand="block" [routerLink]="['/login']">Sign In</p>
+    </ion-row>
 <span class="divider line one-line">or Register with</span>
       <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
       <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">

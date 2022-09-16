@@ -69,33 +69,31 @@
   <ion-row>
     <ion-col>
       <ion-button color="background_home" type="submit" (click)="logIn(email, password)" expand="block"
-        ><p1 class="p">Login</p1> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button
+        ><p class="p2">Login</p> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button
       >
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col>
-      <p1
+      <p
       class="password-reset"
         expand="block"
         color="warning"
         [routerLink]="['/password-reset']"
       >
         Reset password?
-    </p1>
-    </ion-col>    
+    </p>
   </ion-row>
-  <ion-col>
-    <p1>
-      Don't you have Account?</p1>
-      <p1
+  <ion-row>
+    <p class="dont">
+      Don't you have Account?</p>
+      <p
       expand="block"
       color="warning"
       [routerLink]="['/registration']"
       class="p1">
      Reigster Here
-  </p1>
-  </ion-col>
+  </p>
+  </ion-row>
   <span class="divider line one-line">or continue with</span>
       <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
       <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">

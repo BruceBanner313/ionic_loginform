@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+ion-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 button {
   display: flex;
   justify-content: center;
@@ -48,9 +53,14 @@ button:not([disabled]):hover {
   align-items: center;
   color: #ffffff;
 }
-.bu{
+.img{
   margin-left: 0 px;
   margin-top: -20px;
   width: 300px;
   height: 320px;
+}
+ion-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
