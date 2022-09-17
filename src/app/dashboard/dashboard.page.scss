@@ -1,9 +1,12 @@
-
+ion-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 ion-avatar {
     width: 130px;
     height: 130px;
-    margin-top: 30px;
-    margin-left: 118px;
+    margin-top: 10px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
   }
@@ -16,6 +19,4 @@ ion-avatar {
     height: 35px;
     display: flex;
     justify-content: center;
-    margin-left: 140px;
-    margin-top: 50px;
 }

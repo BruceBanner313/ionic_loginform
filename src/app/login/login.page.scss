@@ -1,3 +1,8 @@
+ion-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .p2{
     color: white;
     font-family: Georama;
@@ -10,42 +15,27 @@
     margin-top: 3px;
 }
 .img{
-    margin-left: 10px;
-    margin-top: 37px;
-    width: 353px;
-    height: 293.73px;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 300px;
+  height: 250px;
 }
 .password-reset{
     color: rgb(214, 123, 25);
     font-family: Georama;
+    margin-top: 1px;
+    
 }
 h1{
     color: #ffcc99;
     font-family: Georama;
-    margin-left: 0px;
 }
 .p1{
     color: rgb(214, 123, 25);
     font-family: Georama;
-    margin-top: 2px;
     margin-left: 1px;
+    margin-top: 1%;
 }
-.google {
-    margin-left: 52px;
-  
-      width: 43px;
-      height: 46px;
-  }
-  .apple {
-    margin-left: 70px;
-    width: 45px;
-    height: 46px;
-  }
-  .fb {
-    margin-left: 70px;
-      width: 43px;
-      height: 46px;
-  }
   .divider {
 
     display: flex;
@@ -74,5 +64,26 @@ h1{
   }
 
   .dont{
-    margin-top: 1px;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+  ion-button{
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 200px;
+    height: 40px;
+  }
+  .google {
+    margin-top: 3px;
+    margin-left: 1px;
+  }
+  .apple {
+    margin-top: 3px;
+    margin-left: 50px;
+    width: 45px;
+    height: 45px;
+  }
+  .fb {
+    margin-top: 3px;
+    margin-left: 50px;
   }

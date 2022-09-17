@@ -10,25 +10,25 @@ ion-row{
     height: 250px;
 }
 .google {
-  margin-left: 52px;
-
-    width: 43px;
-    height: 46px;
+  margin-top: 5px;
+  margin-left: 1px;
 }
 .apple {
-  margin-left: 70px;
+  margin-top: 5px;
+  margin-left: 50px;
   width: 45px;
-  height: 46px;
+  height: 45px;
 }
 .fb {
-  margin-left: 70px;
-    width: 43px;
-    height: 46px;
+  margin-top: 5px;
+  margin-left: 50px;
 }
 .p2{
     color: white;
     font-family: Georama;
     margin-top: 20px;
+    margin-left: 0px;
+
 }
 .arrow{
     color: white;
@@ -45,7 +45,6 @@ h1{
     font-family: Georama;
 }
 .divider {
-
     display: flex;
     &:before,
 
@@ -71,7 +70,9 @@ h1{
     }
   }
   ion-button{
-    width: 300px;
-    height: 48px;
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 200px;
+    height: 40px;
   }
   

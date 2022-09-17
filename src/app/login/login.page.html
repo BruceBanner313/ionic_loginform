@@ -1,55 +1,4 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>Sign in User</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
-  <ion-item lines="full">
-    <ion-label position="floating">Email</ion-label>
-    <ion-input type="text" #email required></ion-input>
-  </ion-item>
-
-  <ion-item lines="full">
-    <ion-label position="floating">Password</ion-label>
-    <ion-input type="password" #password required></ion-input>
-  </ion-item>
-
-  <ion-row>
-    <ion-col>
-      <ion-button type="submit" (click)="logIn(email, password)" expand="block"
-        >Login</ion-button
-      >
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      <ion-button
-        expand="block"
-        color="warning"
-        [routerLink]="['/password-reset']"
-      >
-        Password Reset
-      </ion-button>
-    </ion-col>
-  </ion-row>
-
-  <ion-row>
-    <ion-col>
-      <ion-button
-        type="submit"
-        color="danger"
-        (click)="authService.GoogleAuth()"
-        expand="block"
-      >
-        Login with Google
-      </ion-button>
-    </ion-col>
-  </ion-row>
-</ion-content>  -->
-<ion-header collapse="fade">
+<!-- <ion-header collapse="fade">
   <ion-toolbar color="background">
     <ion-buttons slot="start">
     </ion-buttons>
@@ -99,3 +48,53 @@
       <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">
       <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
 </ion-content> -->
+<ion-app >
+  <ion-header collapse="fade">
+    <ion-toolbar color="background">
+      <ion-buttons slot="start">
+      </ion-buttons>
+      <ion-title ><h1>Sign in</h1></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content color="background">
+    <ion-grid fixed>
+      <ion-row><img class="img" src="./assets/icon/loginImage.png">
+      </ion-row>
+      <ion-row><ion-item color="background">
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="text" autocapitalize="sentences" autocomplete="off" #email required></ion-input>
+      </ion-item><ion-item  color="background">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" autocapitalize="sentences" autocomplete="off" #password required></ion-input>
+      </ion-item><ion-button color="background_home" type="submit" (click)="logIn(email, password)" expand="block"
+      ><p class="p2">Login</p> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button
+    ></ion-row>
+      <ion-row><p
+        class="password-reset"
+          expand="block"
+          color="warning"
+          [routerLink]="['/password-reset']"
+        >
+          Reset password?
+      </p></ion-row>
+      <ion-row><p class="dont">
+        Don't you have Account?</p>
+        <p
+        expand="block"
+        color="warning"
+        [routerLink]="['/registration']"
+        class="p1">
+       Reigster Here
+    </p></ion-row>
+      <ion-row>
+        <span class="divider line one-line">or continue with</span>
+        <ion-row>
+          <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
+        <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">
+        <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
+        </ion-row>
+        </ion-row>
+    </ion-grid>
+  </ion-content>
+
+</ion-app>

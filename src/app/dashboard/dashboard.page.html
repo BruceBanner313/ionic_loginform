@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar color="background" >
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -17,13 +17,27 @@
   </div>
   <ion-button class="logout" type="submit" (click)="authService.SignOut()" expand="block"
   >Logout</ion-button>
-</ion-content>
-<!-- <ion-button type="submit" (click)="authService.SignOut()" expand="block"
-  >Logout</ion-button> -->
-  <!-- <div class="Profile" *ngIf="authService.userData as user">
-    <img src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
-      alt="./assets/icon/Group 6818.png">
-    <div class="Profile">
-      <p>Email: <strong>{{user.email}}</strong></p>
-</div>
-</div> -->
+</ion-content> -->
+<ion-app>
+  <ion-header>
+    <ion-toolbar color="background" >
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content color="background">
+    <ion-grid fixed>
+      <ion-row><div *ngIf="authService.userData as user">
+        <ion-avatar><img  src="{{(user.photoURL) ? user.photoURL : '/assets/Group 6818.png'}}"></ion-avatar>
+      </div></ion-row>
+      <ion-row><div class="name" *ngIf="authService.userData as user">
+        <p>Name: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></p>
+        <p>Email:<strong>{{user.email}}</strong></p>
+      </div></ion-row>
+      <ion-row><ion-button class="logout" type="submit" (click)="authService.SignOut()" expand="block"
+        >Logout</ion-button></ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

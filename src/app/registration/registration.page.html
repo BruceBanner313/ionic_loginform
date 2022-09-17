@@ -1,43 +1,3 @@
-<ion-header collapse="fade">
-  <ion-toolbar color="background">
-    <ion-buttons slot="start">
-    </ion-buttons>
-    <ion-title ><h1>Sign up</h1></ion-title>
-  </ion-toolbar>
-</ion-header>
-<!-- <ion-content color="background">
-
-  <img class="img" src="./assets/icon/Mobile login-pana (1) 1.png"> 
-  <form>
-    <ion-item color="background">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" autocapitalize="sentences" autocomplete="off" #email required></ion-input>
-    </ion-item>
-
-    <ion-item color="background">
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" autocapitalize="sentences" autocomplete="off" #password required></ion-input>
-    </ion-item>
-
-    <ion-row>
-      <ion-col>
-        <ion-button
-          type="submit" color="background_home"
-          (click)="signUp(email, password)"
-          expand="block"
-          ><p class="p2">Register</p> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <p>already a user?</p>
-        <p class="p1" expand="block" [routerLink]="['/login']">Sign In</p>
-    </ion-row>
-<span class="divider line one-line">or Register with</span>
-      <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
-      <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">
-      <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
-  </form>
-</ion-content> -->
 <ion-app >
   <ion-header collapse="fade">
     <ion-toolbar color="background">
@@ -55,11 +15,12 @@
       </ion-item><ion-item color="background">
         <ion-label position="floating">Password</ion-label>
         <ion-input type="password" autocapitalize="sentences" autocomplete="off" #password required></ion-input>
-      </ion-item><ion-button
-      type="submit" color="background_home"
-      (click)="signUp(email, password)"
-      expand="block"
-      ><p class="p2">Register</p></ion-button><img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-row>
+      </ion-item></ion-row>
+      <ion-row>
+        <ion-button color="background_home" type="submit" (click)="signUp(email, password)" expand="block"
+        ><p class="p2">Register</p> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button
+      >
+      </ion-row>
       <ion-row><ion-row>
         <p>already a user?</p>
           <p class="p1" expand="block" [routerLink]="['/login']">Sign In</p>
