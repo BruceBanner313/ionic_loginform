@@ -48,7 +48,7 @@
       <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">
       <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
 </ion-content> -->
-<ion-app >
+<ion-app  >
   <ion-header collapse="fade">
     <ion-toolbar color="background">
       <ion-buttons slot="start">
@@ -89,9 +89,15 @@
       <ion-row>
         <span class="divider line one-line">or continue with</span>
         <ion-row>
-          <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
-        <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">
-        <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
+          <ion-col>
+            <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
+          </ion-col>
+          <ion-col>
+            <img class="apple" src="./assets/icon/apple.png" (click)="authService.GoogleAuth()">
+          </ion-col>
+          <ion-col>
+            <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
+          </ion-col>
         </ion-row>
         </ion-row>
     </ion-grid>

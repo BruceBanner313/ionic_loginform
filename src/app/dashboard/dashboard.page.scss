@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 ion-row{
     display: flex;
     justify-content: center;
@@ -12,11 +13,12 @@ ion-avatar {
   }
 .name{
     margin-left: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins';
 }
 .logout{
     width: 70px;
     height: 35px;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins';
 }

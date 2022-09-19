@@ -1,38 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 ion-row{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .img{
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 8px;
+    margin-top: 5px;
     width: 200px;
     height: 250px;
 }
 .google {
-  margin-top: 5px;
-  margin-left: 1px;
+  margin-top: 0px;
+  margin-left: 70px;
+  width: 35px;
+  height: 35px;
 }
 .apple {
-  margin-top: 5px;
-  margin-left: 50px;
-  width: 45px;
-  height: 45px;
+  margin-left: 30px;
+  width: 35px;
+  height: 35px;
 }
 .fb {
-  margin-top: 5px;
-  margin-left: 50px;
+  margin-left: 0px;
+  width: 35px;
+  height: 35px;
 }
 .p2{
     color: white;
-    font-family: Georama;
+    font-family: 'Poppins';
     margin-top: 20px;
     margin-left: 0px;
 
 }
 .arrow{
     color: white;
-    font-family: Georama;
+    font-family: 'Poppins';
     margin-top: 3px;
 }
 h1{
@@ -42,23 +45,49 @@ h1{
 }
 .p1{
     color: rgb(214, 123, 25);
-    font-family: Georama;
+    font-family: 'Poppins';
+    font-weight: bold;
 }
-.divider {
+  ion-button{
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 200px;
+    height: 40px;
+  }
+  .divider {
+
     display: flex;
+
+   
+
     &:before,
 
     &:after {
+
       content: "";
+
       flex: 1;
+
     }
+
   }
+
+ 
+
   .line {
+
     align-items: center;
+
     margin: 1em 1em;
+
     color: #cccccc;
+
+   
+
     &:before,
+
     &:after {
+
       height: 1px;
       margin: 0 1em;
     }
@@ -69,10 +98,3 @@ h1{
        background: #cccccc;
     }
   }
-  ion-button{
-    margin-top: 10px;
-    margin-left: 0px;
-    width: 200px;
-    height: 40px;
-  }
-  
