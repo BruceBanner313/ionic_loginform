@@ -1,7 +1,7 @@
 {
-  "name": "ionic-firebase-authentication",
+  "name": "freshdirect",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "AJ",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~13.2.2",
     "@angular/router": "~13.2.2",
     "@awesome-cordova-plugins/header-color": "^5.45.0",
+    "@capacitor/android": "3.4.3",
     "@capacitor/app": "1.1.1",
     "@capacitor/core": "3.4.3",
     "@capacitor/haptics": "1.1.4",

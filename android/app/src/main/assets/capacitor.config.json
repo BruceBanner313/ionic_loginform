@@ -1,0 +1,6 @@
+{
+	"appId": "freshdirect.app",
+	"appName": "Freshdirect",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

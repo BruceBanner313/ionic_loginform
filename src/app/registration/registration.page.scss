@@ -6,7 +6,7 @@ ion-row{
 }
 .img{
     margin-left: 8px;
-    margin-top: 5px;
+    margin-top: 0px;
     width: 200px;
     height: 250px;
 }
@@ -38,11 +38,6 @@ ion-row{
     font-family: 'Poppins';
     margin-top: 3px;
 }
-h1{
-    color: #ffcc99;
-    font-family: Georama;
-    margin-left: 0px;
-}
 .p1{
     color: rgb(214, 123, 25);
     font-family: 'Poppins';
@@ -55,46 +50,39 @@ h1{
     height: 40px;
   }
   .divider {
-
+    margin-top: 0px;
     display: flex;
-
-   
-
+    align-items: center;
     &:before,
-
     &:after {
-
       content: "";
-
       flex: 1;
-
     }
-
   }
-
- 
-
   .line {
 
     align-items: center;
-
     margin: 1em 1em;
-
     color: #cccccc;
-
-   
+    margin-top: 0px;
 
     &:before,
 
     &:after {
-
+      align-items: center;
       height: 1px;
       margin: 0 1em;
+      margin-top: 0px;
     }
   }
   .one-line {
     &:before,
     &:after {
        background: #cccccc;
+       align-items: center;
+       margin-top: 1px;
     }
+  }
+  ion-button{
+    margin-top: 5px;
   }

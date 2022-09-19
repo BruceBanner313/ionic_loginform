@@ -21,11 +21,13 @@
         ><p class="p2">Register</p> <img class="arrow" src="./assets/icon/arrow_forward_24px.png"></ion-button
       >
       </ion-row>
-      <ion-row><ion-row>
+      <ion-row>
         <p>already a user?</p>
           <p class="p1" expand="block" [routerLink]="['/login']">Sign In</p>
+      <ion-row>
           <span class="divider line one-line">or continue with</span>
-        </ion-row></ion-row>
+      </ion-row>
+        </ion-row>
       <ion-row>
         <ion-col>
           <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
