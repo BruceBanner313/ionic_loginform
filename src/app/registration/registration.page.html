@@ -1,4 +1,4 @@
-<ion-app >
+<ion-app>
   <ion-header collapse="fade">
     <ion-toolbar color="background">
       <ion-buttons slot="start">
@@ -22,12 +22,8 @@
       >
       </ion-row>
       <ion-row>
-        <p>already a user?</p>
-          <p class="p1" expand="block" [routerLink]="['/login']">Sign In</p>
-      <ion-row>
           <span class="divider line one-line">or continue with</span>
       </ion-row>
-        </ion-row>
       <ion-row>
         <ion-col>
           <img class="google" src="./assets/icon/google.png" (click)="authService.GoogleAuth()">
@@ -38,6 +34,10 @@
         <ion-col>
           <img class="fb" src="./assets/icon/fb.png" (click)="authService.FacebookAuth()">
         </ion-col>
+      </ion-row>
+      <ion-row>
+        <p >already a user?</p>
+          <p class="p1" expand="block" [routerLink]="['/login']">Sign In</p>
       </ion-row>
     </ion-grid>
   </ion-content>
